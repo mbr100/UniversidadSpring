@@ -1,0 +1,6 @@
+com/marioborrego/servicio/PersonaService.class
+com/marioborrego/web/ControladorInicio.class
+com/marioborrego/servicio/PersonaServiceImpl.class
+com/marioborrego/domain/Persona.class
+com/marioborrego/dao/PersonaDao.class
+com/marioborrego/HolaMundoSpringApplication.class
