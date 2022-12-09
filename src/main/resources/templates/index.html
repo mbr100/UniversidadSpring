@@ -39,6 +39,7 @@
                         <td th:text="${persona.email}">eMail</td>
                         <td th:text="${persona.telefono}">Telefono</td>
                         <td> <a th:href="@{/editar/}+${persona.idPersona}" th:text="Editar"></a></td>
+                        <td> <a th:href="@{/eliminE/}+${persona.idPersona}" th:text="EliminR"></a></td>
                     </tr>
                     </tbody>
                 </table>
