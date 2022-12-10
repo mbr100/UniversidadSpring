@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:h="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="UTF-8">
         <title>Inicio</title>
@@ -13,9 +13,7 @@
         <h1 class="display-1" align="center">Inicio</h1>
         <div class="container">
             <nav class="navbar navbar-light bg-light">
-                <form class="form-inline">
-                    <button class="btn btn-outline-success" type="button" th:href="@{/agregar}">Crear Persona</button>
-                </form>
+                <a th:href="@{/agregar}">Crear Persona</a>
             </nav>
         </div>
         <br/>
@@ -38,8 +36,8 @@
                         <td th:text="${persona.apellido}">Apellido</td>
                         <td th:text="${persona.email}">eMail</td>
                         <td th:text="${persona.telefono}">Telefono</td>
-                        <td> <a th:href="@{/editar/}+${persona.idPersona}" th:text="Editar"></a></td>
-                        <td> <a th:href="@{/eliminE/}+${persona.idPersona}" th:text="EliminR"></a></td>
+                        <td> <a th:href="@{/editar/}+${persona.idPersona}" th:text="Editar" ></a> </td>
+                        <td> <a th:href="@{/eliminar(idPersona=${persona.idPersona})}" th:text="Eliminar"></a></td>
                     </tr>
                     </tbody>
                 </table>
